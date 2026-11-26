@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SkillUp Digital Marketing</title>
+<style>
+:root{--bg:#f6f7fb;--card:#fff;--text:#1c2030;--muted:#5b6275;--brand:#4f46e5;--brand-text:#fff;--border:#dfe2ec;--ok:#16a34a;--hero:#e8e9ff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12141c;--card:#1b1e2a;--text:#eef0f7;--muted:#a0a7bd;--brand:#818cf8;--brand-text:#12141c;--border:#2c3040;--ok:#4ade80;--hero:#1e2140}}
+:root[data-theme="dark"]{--bg:#12141c;--card:#1b1e2a;--text:#eef0f7;--muted:#a0a7bd;--brand:#818cf8;--brand-text:#12141c;--border:#2c3040;--ok:#4ade80;--hero:#1e2140}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.55}
+.wrap{max-width:900px;margin:0 auto;padding:24px 18px 48px}
+h1{font-size:2rem;line-height:1.2;margin:.4em 0}
+h2{margin:0 0 10px}
+.sub{color:var(--muted);font-size:1.05rem}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
+.chips span{background:var(--card);border:1px solid var(--border);border-radius:999px;padding:6px 14px;font-size:.9rem}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:22px;margin-top:20px}
+label{display:block;font-weight:600;margin:14px 0 6px}
+input,select{width:100%;padding:12px;border:1px solid var(--border);border-radius:10px;background:var(--bg);color:var(--text);font-size:1rem}
+button,.btn{display:inline-block;width:100%;margin-top:16px;padding:14px;border:0;border-radius:10px;background:var(--brand);color:var(--brand-text);font-size:1rem;font-weight:700;cursor:pointer;text-align:center;text-decoration:none;font-family:inherit}
+.btn.wa{background:#25d366;color:#0b2e17}
+.btn.ghost{background:transparent;color:var(--brand);border:1px solid var(--border)}
+.err{color:#dc2626;font-size:.85rem;margin-top:4px;min-height:1em}
+.tick{font-size:3rem;color:var(--ok)}
+.hidden{display:none}
+.summary{background:var(--bg);border-radius:10px;padding:12px 16px;margin:16px 0;text-align:left}
+nav{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between;padding-bottom:14px;border-bottom:1px solid var(--border)}
+nav b{font-size:1.15rem}
+nav div{display:flex;flex-wrap:wrap;gap:6px}
+nav button{width:auto;margin:0;padding:8px 14px;background:transparent;color:var(--text);border:1px solid var(--border);font-weight:600}
+nav button.primary{background:var(--brand);color:var(--brand-text);border-color:var(--brand)}
+.hero{background:var(--hero);border-radius:16px;padding:34px 22px;margin-top:20px;text-align:center}
+.hero .btn,.hero button{width:auto;padding:14px 28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:14px}
+.grid .card{margin:0}
+.grid h3{margin:0 0 6px}
+section.block{margin-top:36px}
+.btnrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px}
+.btnrow.center{justify-content:center}
+.btnrow .btn,.btnrow button{flex:1;width:auto;min-width:110px;margin-top:12px;padding:12px 18px}
+footer{margin-top:40px;text-align:center;color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- LANDING PAGE (default) -->
+<div id="v-landing">
+  <h1>Learn Digital Marketing Skills — Free Practice Batch</h1>
+  <p class="sub">Beginner-friendly course. Fill in the form and we’ll contact you by email or WhatsApp.</p>
+  <div class="chips">
+    <span>SEO</span><span>Social Media</span><span>Meta Ads</span><span>Google Ads</span><span>Content Writing</span><span>Email Marketing</span>
+  </div>
+  <div class="card">
+    <h2>Register Now</h2>
+    <form id="f" novalidate>
+      <label for="name">Full name</label>
+      <input id="name" type="text" placeholder="Ali Khan" autocomplete="name">
+      <div class="err" id="e-name"></div>
+
+      <label for="email">Email</label>
+      <input id="email" type="email" placeholder="ali@example.com" autocomplete="email">
+      <div class="err" id="e-email"></div>
+
+      <label for="wa">WhatsApp number</label>
+      <input id="wa" type="tel" placeholder="03001234567" autocomplete="tel">
+      <div class="err" id="e-wa"></div>
+
+      <label for="skill">Which skill do you want to learn?</label>
+      <select id="skill">
+        <option value="">-- Select --</option>
+        <option>SEO</option>
+        <option>Social Media Marketing</option>
+        <option>Meta (Facebook/Instagram) Ads</option>
+        <option>Google Ads</option>
+        <option>Content Writing</option>
+        <option>Email Marketing</option>
+      </select>
+      <div class="err" id="e-skill"></div>
+
+      <button type="submit">Submit</button>
+    </form>
+    <a class="btn ghost" href="#website">Visit our website</a>
+  </div>
+</div>
+
+<!-- THANK YOU PAGE -->
+<div id="v-thanks" class="hidden">
+  <div class="card" style="text-align:center">
+    <div class="tick">✓</div>
+    <h1 style="font-size:1.6rem">Thank you, <span id="t-name">friend</span>!</h1>
+    <p class="sub">We’ve received your form and will contact you soon.</p>
+    <div class="summary" id="t-sum"></div>
+    <a class="btn wa" id="t-wa" href="#" target="_blank" rel="noopener">Message us on WhatsApp</a>
+    <a class="btn ghost" id="t-mail" href="#">Send us an email</a>
+    <a class="btn" href="#website">Visit our website</a>
+  </div>
+</div>
+
+<!-- WEBSITE -->
+<div id="v-site" class="hidden">
+  <nav>
+    <b>📣 SkillUp</b>
+    <div>
+      <button data-scroll="s-courses">Courses</button>
+      <button data-scroll="s-about">About</button>
+      <button data-scroll="s-contact">Contact</button>
+      <button class="primary" data-go="">Enroll</button>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <h1>Build a career in digital marketing</h1>
+    <p class="sub">Practical, step-by-step training in the skills businesses are hiring for.</p>
+    <div class="btnrow center"><button data-go="">Book Now</button><a class="btn wa" id="h-enq" href="#" target="_blank" rel="noopener">Enquire</a></div>
+  </div>
+
+  <section class="block" id="s-courses">
+    <h2>Our Courses</h2>
+    <div class="grid">
+      <div class="card"><h3>SEO</h3><p class="sub">Rank websites on Google with keyword research and on-page basics.</p></div>
+      <div class="card"><h3>Social Media Marketing</h3><p class="sub">Plan content, grow pages and build an engaged audience.</p></div>
+      <div class="card"><h3>Meta Ads</h3><p class="sub">Run Facebook and Instagram ad campaigns that convert.</p></div>
+      <div class="card"><h3>Google Ads</h3><p class="sub">Search and display campaigns, budgets and tracking.</p></div>
+      <div class="card"><h3>Content Writing</h3><p class="sub">Write blogs, captions and copy that people want to read.</p></div>
+      <div class="card"><h3>Email Marketing</h3><p class="sub">Build lists, write newsletters and automate follow-ups.</p></div>
+    </div>
+  </section>
+
+  <section class="block" id="s-about">
+    <h2>About Us</h2>
+    <div class="card">
+      <p class="sub" style="margin:0">SkillUp is a practice project for learning digital marketing. Our classes are hands-on: every lesson ends with a small task you can show in your portfolio.</p>
+    </div>
+  </section>
+
+  <section class="block" id="s-contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p class="sub" style="margin-top:0">Questions? Reach us anytime.</p>
+      <a class="btn wa" id="c-wa" href="#" target="_blank" rel="noopener">WhatsApp us</a>
+      <a class="btn ghost" id="c-mail" href="#">Email us</a>
+    </div>
+  </section>
+
+  <footer>© 2026 SkillUp Digital Marketing · Practice website</footer>
+</div>
+
+</div>
+<script>
+// Change these to your own details (number with country code, no + or leading 0)
+var OWNER_WA = "923001234567";
+var OWNER_EMAIL = "you@example.com";
+var data = null;
+var $ = function(id){return document.getElementById(id)};
+
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+
+function show(){
+  var h = location.hash.replace("#","");
+  $("v-landing").classList.toggle("hidden", h==="website"||h==="thankyou");
+  $("v-thanks").classList.toggle("hidden", h!=="thankyou");
+  $("v-site").classList.toggle("hidden", h!=="website");
+  if(h==="thankyou") fillThanks();
+  window.scrollTo(0,0);
+}
+
+function fillThanks(){
+  var d = data || {name:"",email:"",wa:"",skill:""};
+  $("t-name").textContent = d.name || "friend";
+  $("t-sum").innerHTML = d.email
+    ? "<b>Email:</b> "+esc(d.email)+"<br><b>WhatsApp:</b> "+esc(d.wa)+"<br><b>Skill:</b> "+esc(d.skill)
+    : "Your details are not available in this session.";
+  var msg = "Hello! I’m "+(d.name||"")+". I’m interested in the "+(d.skill||"digital marketing")+" course.";
+  $("t-wa").href = "https://wa.me/"+OWNER_WA+"?text="+encodeURIComponent(msg);
+  $("t-mail").href = "mailto:"+OWNER_EMAIL+"?subject="+encodeURIComponent("Course Inquiry")+"&body="+encodeURIComponent(msg);
+}
+
+$("f").addEventListener("submit", function(ev){
+  ev.preventDefault();
+  var v = {name:$("name").value.trim(),email:$("email").value.trim(),wa:$("wa").value.trim(),skill:$("skill").value};
+  var ok = true;
+  function err(id,m){$("e-"+id).textContent=m; if(m) ok=false;}
+  err("name", v.name.length<3 ? "Please enter your name (at least 3 letters)." : "");
+  err("email", /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.email) ? "" : "Please enter a valid email.");
+  err("wa", /^[0-9+\s-]{10,15}$/.test(v.wa) ? "" : "Please enter a valid WhatsApp number.");
+  err("skill", v.skill ? "" : "Please select a skill.");
+  if(!ok) return;
+  data = v;
+  location.hash = "thankyou";
+});
+
+document.querySelectorAll("[data-scroll]").forEach(function(b){
+  b.addEventListener("click", function(){ $(b.dataset.scroll).scrollIntoView({behavior:"smooth"}); });
+});
+document.querySelectorAll("[data-go]").forEach(function(b){
+  b.addEventListener("click", function(){ location.hash = b.dataset.go || "enroll"; });
+});
+
+$("c-wa").href = "https://wa.me/"+OWNER_WA+"?text="+encodeURIComponent("Hello! I have a question about your courses.");
+$("c-mail").href = "mailto:"+OWNER_EMAIL;
+
+function enquiryLink(topic){return "https://wa.me/"+OWNER_WA+"?text="+encodeURIComponent("Hello! I’d like to enquire about "+topic+".");}
+$("h-enq").href = enquiryLink("your digital marketing courses");
+document.querySelectorAll(".grid .card").forEach(function(c){
+  var t = c.querySelector("h3").textContent;
+  var row = document.createElement("div"); row.className = "btnrow";
+  var b = document.createElement("button"); b.textContent = "Book";
+  b.addEventListener("click", function(){
+    var first = t.split(" ")[0];
+    Array.prototype.forEach.call($("skill").options, function(o){ if(o.text.indexOf(first)===0) $("skill").value = o.text; });
+    location.hash = "enroll";
+  });
+  var a = document.createElement("a"); a.className = "btn wa"; a.textContent = "Enquire";
+  a.target = "_blank"; a.rel = "noopener"; a.href = enquiryLink(t+" course");
+  row.appendChild(b); row.appendChild(a); c.appendChild(row);
+});
+
+window.addEventListener("hashchange", show);
+show();
+</script>
+</body>
+</html>
