@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VANTA — Digital Growth Studio</title>
+  <meta name="description" content="VANTA helps ambitious brands grow with paid media, creative strategy, search and conversion-focused websites.">
+  <meta name="theme-color" content="#101114">
+
+  <!-- GTM: Replace GTM-XXXXXXX with your own container ID.
+  Paste the official GTM <script> snippet immediately below this comment. -->
+
+  <style>
+    :root{--bg:#101114;--panel:#191b20;--panel2:#20232a;--text:#f4f2ed;--muted:#a7a8ad;--lime:#c7f36b;--line:rgba(255,255,255,.12);--max:1160px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+    .nav{position:sticky;top:0;z-index:10;background:rgba(16,17,20,.88);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+    .navin{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:11px;font-weight:900;letter-spacing:.16em;font-size:19px}
+    .mark{width:31px;height:31px;border:2px solid var(--lime);border-radius:10px;display:grid;place-items:center;color:var(--lime);font-size:17px;transform:rotate(-8deg)}
+    .links{display:flex;gap:27px;color:#c7c7c9;font-size:13px}.links a:hover{color:var(--lime)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 19px;border-radius:5px;background:var(--lime);color:#11140c;font-size:13px;font-weight:800;border:1px solid var(--lime);cursor:pointer;transition:.2s}
+    .btn:hover{transform:translateY(-2px);filter:brightness(1.05)}.btn.outline{background:transparent;color:var(--text);border-color:var(--line)}
+    .hero{padding:104px 0 85px;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;width:560px;height:560px;border-radius:50%;right:-120px;top:-190px;background:radial-gradient(circle,rgba(199,243,107,.14),transparent 68%);pointer-events:none}
+    .eyebrow{color:var(--lime);font-size:11px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;display:flex;align-items:center;gap:10px}.eyebrow:before{content:"";width:25px;height:1px;background:var(--lime)}
+    h1{font-size:clamp(48px,8vw,94px);line-height:.99;letter-spacing:-.065em;max-width:900px;margin:25px 0 24px;font-weight:850}h1 em{font-style:normal;color:var(--lime)}
+    .hero p{max-width:590px;color:var(--muted);font-size:17px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:31px}
+    .herofoot{display:flex;gap:34px;flex-wrap:wrap;margin-top:78px;padding-top:24px;border-top:1px solid var(--line);color:var(--muted);font-size:12px}.herofoot strong{color:var(--text);display:block;font-size:20px}
+    section{padding:82px 0}.sectionhead{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:34px}.kicker{font-size:11px;color:var(--lime);letter-spacing:.18em;text-transform:uppercase;font-weight:800}.sectionhead h2{font-size:clamp(34px,5vw,55px);letter-spacing:-.05em;line-height:1.05;margin:12px 0 0}.sectionhead p{max-width:390px;color:var(--muted);font-size:14px}
+    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.card{background:var(--panel);border:1px solid var(--line);padding:25px;min-height:225px;transition:.25s}.card:hover{border-color:rgba(199,243,107,.65);transform:translateY(-4px)}.num{color:var(--lime);font-size:12px;letter-spacing:.12em}.card h3{font-size:20px;margin:35px 0 9px}.card p{font-size:13px;color:var(--muted);margin:0}
+    .band{background:var(--lime);color:#151811;padding:52px 0}.bandin{display:flex;align-items:center;justify-content:space-between;gap:30px}.band h2{font-size:clamp(30px,5vw,48px);line-height:1.05;letter-spacing:-.05em;margin:0;max-width:700px}.band .btn{background:#151811;color:var(--lime);border-color:#151811}
+    .workgrid{display:grid;grid-template-columns:1.2fr .8fr;gap:14px}.work{min-height:280px;background:linear-gradient(135deg,#252a30,#17191d);border:1px solid var(--line);padding:28px;display:flex;flex-direction:column;justify-content:end;position:relative;overflow:hidden}.work:before{content:"";position:absolute;width:240px;height:240px;border:1px solid rgba(199,243,107,.35);border-radius:50%;right:-40px;top:-80px;box-shadow:0 0 0 28px rgba(199,243,107,.035),0 0 0 58px rgba(199,243,107,.025)}.work small{color:var(--lime);letter-spacing:.13em;text-transform:uppercase}.work h3{font-size:28px;margin:7px 0}.work p{color:var(--muted);font-size:13px;max-width:430px;margin:0}
+    .aboutgrid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.aboutbox{background:var(--panel);border:1px solid var(--line);padding:34px}.aboutbox h3{font-size:25px;line-height:1.2;margin:0 0 15px}.aboutbox p{color:var(--muted);font-size:14px}.ticks{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}.ticks span{font-size:12px;color:#d8d8d5}.ticks span:before{content:"↗";color:var(--lime);margin-right:8px}
+    .contactgrid{display:grid;grid-template-columns:.8fr 1.2fr;gap:45px}.contactcopy h2{font-size:clamp(35px,5vw,57px);line-height:1.03;letter-spacing:-.05em;margin:12px 0}.contactcopy p{color:var(--muted);font-size:14px}.formbox{background:var(--panel);border:1px solid var(--line);padding:27px}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:grid;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:11px;color:#c6c7c8}.field input,.field select,.field textarea{width:100%;padding:13px;background:#101216;color:var(--text);border:1px solid var(--line);border-radius:3px;font:inherit;font-size:13px;outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--lime)}.field textarea{min-height:105px;resize:vertical}.formnote{color:var(--muted);font-size:10px;margin:12px 0 0}
+    .success{display:none;padding:30px;text-align:center;border:1px solid rgba(199,243,107,.5);background:#20291a}.success h3{color:var(--lime);font-size:25px}.success p{color:#d1d6c8}
+    footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:11px}.footin{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    @media(max-width:850px){.grid{grid-template-columns:repeat(2,1fr)}.links{display:none}.aboutgrid,.contactgrid{grid-template-columns:1fr}.workgrid{grid-template-columns:1fr}.sectionhead{display:block}.sectionhead p{margin-top:15px}.bandin{display:block}.band .btn{margin-top:22px}}
+    @media(max-width:520px){.wrap{width:min(var(--max),calc(100% - 28px))}.hero{padding:76px 0 60px}.herofoot{gap:20px}.grid{grid-template-columns:1fr}.card{min-height:180px}.formgrid{grid-template-columns:1fr}.field.full{grid-column:auto}section{padding:62px 0}.navin{height:66px}}
+  </style>
+</head>
+<body>
+  <!-- GTM noscript: Paste the official GTM iframe snippet immediately after the opening body tag. -->
+
+  <header class="nav">
+    <div class="wrap navin">
+      <a class="brand" href="#top"><span class="mark">V</span> VANTA</a>
+      <nav class="links" aria-label="Main navigation">
+        <a href="#services">Services</a><a href="#work">Selected work</a><a href="#studio">Studio</a><a href="#contact">Contact</a>
+      </nav>
+      <a class="btn" href="#contact">Let's talk <span>↗</span></a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap">
+        <div class="eyebrow">Independent digital growth studio</div>
+        <h1>Make your next move <em>matter.</em></h1>
+        <p>We turn smart strategy, bold creative and measurable marketing into momentum for ambitious businesses.</p>
+        <div class="actions">
+          <a class="btn" href="#contact" id="hero-cta">Start a project ↗</a>
+          <a class="btn outline" href="#services">Explore what we do</a>
+        </div>
+        <div class="herofoot">
+          <div><strong>01</strong> Clear strategy</div>
+          <div><strong>02</strong> Creative execution</div>
+          <div><strong>03</strong> Measurable growth</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="wrap">
+        <div class="sectionhead"><div><div class="kicker">What we do</div><h2>Built for the<br>next stage.</h2></div><p>One connected approach across the channels that help your business get discovered, earn trust and convert attention into action.</p></div>
+        <div class="grid">
+          <article class="card"><div class="num">01 / PERFORMANCE</div><h3>Paid Media</h3><p>Search and social campaigns built around qualified leads, smart budgets and clear measurement.</p></article>
+          <article class="card"><div class="num">02 / DISCOVERY</div><h3>Search & SEO</h3><p>Technical foundations and useful content that help the right people find your business.</p></article>
+          <article class="card"><div class="num">03 / CREATIVE</div><h3>Social Content</h3><p>Consistent creative systems that make your brand recognisable and worth following.</p></article>
+          <article class="card"><div class="num">04 / EXPERIENCE</div><h3>Web Design</h3><p>Fast, responsive landing pages designed to turn visits into meaningful enquiries.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <div class="band"><div class="wrap bandin"><h2>Good marketing should move the business forward.</h2><a class="btn" href="#contact">Let's build momentum ↗</a></div></div>
+
+    <section id="work">
+      <div class="wrap">
+        <div class="sectionhead"><div><div class="kicker">Selected concepts</div><h2>Ideas into impact.</h2></div><p>Illustrative demo projects created for this practice website. These are concepts, not client case studies or performance claims.</p></div>
+        <div class="workgrid">
+          <article class="work"><small>Concept 01 / Local business</small><h3>More relevant enquiries.</h3><p>A search campaign and focused landing page concept for a service business.</p></article>
+          <article class="work"><small>Concept 02 / E-commerce</small><h3>A clearer brand journey.</h3><p>A creative and conversion experience concept for an online store.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="studio">
+      <div class="wrap aboutgrid">
+        <div><div class="kicker">The VANTA approach</div><h2 style="font-size:clamp(38px,5vw,58px);letter-spacing:-.055em;line-height:1.02;margin:14px 0">Less guesswork.<br><span style="color:var(--lime)">More intention.</span></h2><p style="color:var(--muted);max-width:480px">We believe every click should have a purpose. Start with the business goal, build the right experience, then measure what matters.</p></div>
+        <div class="aboutbox"><h3>Strategy first. Always.</h3><p>This demo studio brings marketing, design and measurement together in one practical workflow. No inflated promises — just a clear process and useful data.</p><div class="ticks"><span>Audience research</span><span>Campaign planning</span><span>Landing pages</span><span>Event tracking</span><span>Creative testing</span><span>Performance review</span></div></div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap contactgrid">
+        <div class="contactcopy"><div class="kicker">Start a conversation</div><h2>Have a goal?<br><span style="color:var(--lime)">Let's map it.</span></h2><p>Tell us what you're working on. This demo form is set up for GTM and GA4 event practice; it does not send or store your information.</p></div>
+        <div class="formbox">
+          <form id="lead-form">
+            <div class="formgrid">
+              <div class="field"><label for="full-name">Name *</label><input id="full-name" name="name" autocomplete="name" required placeholder="Your name"></div>
+              <div class="field"><label for="email">Email *</label><input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com"></div>
+              <div class="field"><label for="business">Business</label><input id="business" name="business" placeholder="Your business name"></div>
+              <div class="field"><label for="service">Interested in *</label><select id="service" name="service" required><option value="">Choose a service</option><option>Paid Media</option><option>Search & SEO</option><option>Social Content</option><option>Web Design</option></select></div>
+              <div class="field full"><label for="details">What would you like to achieve?</label><textarea id="details" name="details" placeholder="A few details about your goal..."></textarea></div>
+              <div class="field full"><button class="btn" type="submit">Send demo enquiry ↗</button></div>
+            </div>
+            <p class="formnote">Demo only — form submissions are not transmitted to a server.</p>
+          </form>
+          <div class="success" id="form-success" role="status"><h3>Thanks — demo enquiry complete.</h3><p>Your test lead event has fired. You can now verify it in GTM Preview after installing your container.</p><a class="btn" href="#top">Back to top</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap footin"><a class="brand" href="#top"><span class="mark">V</span> VANTA</a><span>© 2026 VANTA Digital Studio · Demo website for analytics practice</span><span>Privacy · Terms</span></div></footer>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    document.getElementById('lead-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      var service = document.getElementById('service').value;
+      window.dataLayer.push({
+        event: 'generate_lead',
+        form_name: 'vanta_demo_enquiry',
+        service_type: service
+      });
+      document.getElementById('lead-form').style.display = 'none';
+      document.getElementById('form-success').style.display = 'block';
+    });
+    document.querySelectorAll('a[href="#contact"]').forEach(function(link) {
+      link.addEventListener('click', function() {
+        window.dataLayer.push({event: 'contact_cta_click', cta_text: link.textContent.trim()});
+      });
+    });
+  </script>
+  <!-- After GTM is installed, configure GA4 and Google Ads tags in GTM. -->
+</body>
+</html>
